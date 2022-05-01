@@ -1,79 +1,16 @@
-import Image from 'next/image';
-import * as React from 'react';
+/* eslint-disable prettier/prettier */
+import Image from "next/image";
+import * as React from "react";
 
-const Footer = () => {
-  const footerNavs = [
-    {
-      label: 'Company',
-      items: [
-        {
-          href: '#',
-          name: 'Partners',
-        },
-        {
-          href: '#',
-          name: 'Blog',
-        },
-        {
-          href: '#',
-          name: 'Team',
-        },
-        {
-          href: '#',
-          name: 'Careers',
-        },
-      ],
-    },
-    {
-      label: 'Resources',
-      items: [
-        {
-          href: '#',
-          name: 'contact',
-        },
-        {
-          href: '#',
-          name: 'Support',
-        },
-        {
-          href: '#',
-          name: 'Docs',
-        },
-        {
-          href: '#',
-          name: 'Pricing',
-        },
-      ],
-    },
-    {
-      label: 'About',
-      items: [
-        {
-          href: '#',
-          name: 'Terms',
-        },
-        {
-          href: '#',
-          name: 'License',
-        },
-        {
-          href: '#',
-          name: 'Privacy',
-        },
-        {
-          href: '#',
-          name: 'About US',
-        },
-      ],
-    },
-  ];
+import { footerNavs } from "../../../routes";
 
+const Footer = (_props: any) => {
   return (
     <footer className="mx-auto max-w-screen-xl bg-white px-4 py-5 text-gray-500">
       <div className="justify-between gap-6 md:flex">
         <div className="flex-1">
           <div className="max-w-xs">
-            <Image
+            <img
               src="https://www.floatui.com/logo.svg"
               className="w-32"
               alt="Brand_logo"

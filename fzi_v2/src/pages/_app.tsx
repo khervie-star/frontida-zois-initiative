@@ -1,9 +1,17 @@
-import '../styles/global.css';
+/* eslint-disable prettier/prettier */
+import "../styles/global.css";
 
-import { AppProps } from 'next/app';
+import { AppProps } from "next/app";
+
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
-  <Component {...pageProps} />
+  <>
+    <Navbar />
+    <Component {...pageProps} />
+    <Footer />
+  </>
 );
 
 export default MyApp;
