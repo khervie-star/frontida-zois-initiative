@@ -11,7 +11,7 @@ export const ContainedButton = ({ children, onClick, disabled }: BtnProps) => {
 
 export const ContBtn = styled.button`
   background: #d948a6;
-  border: 1px solid #d948a6;
+  border: 1px solid transparent;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -23,17 +23,8 @@ export const ContBtn = styled.button`
   border-radius: 0;
   padding: 14px 27px;
   color: #fff;
+  text-transform: uppercase;
   cursor: pointer;
-  ${({ disabled }: BtnProps) =>
-    disabled
-      ? css`
-          color: #a0aaba;
-          border-color: #a0aaba;
-        `
-      : css`
-          color: #007afb;
-          border-color: #007afb;
-        `}
 `;
 
 export const OutlinedButton = ({ children, onClick, disabled }: BtnProps) => {
