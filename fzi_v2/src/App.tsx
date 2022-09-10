@@ -1,16 +1,17 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import TopNavigation from "./components/molecules/topNav";
-import Navbar from "./components/molecules/navbar";
-import Footer from "./components/organisms/footer"
+import { Routes, Route, Link } from "react-router-dom";
+import Home from "./pages/homePage";
+import About from "./pages/aboutPage";
 
 function App() {
   return (
     <div className="App">
-      <TopNavigation />
-      <Navbar />
-      <Footer/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+      </Routes>
     </div>
   );
 }

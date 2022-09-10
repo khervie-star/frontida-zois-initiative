@@ -5,9 +5,16 @@ import {
   InstagramIcon,
   TwitterIcon,
   YoutubeIcon,
-} from "../../atoms/whiteicons";
-import {Container, ContentWrapper, FirstRow, LastColumn, LogoWrapper, SecondRow, Icons} from "./styles"
-
+} from "../../atoms/icons";
+import {
+  Container,
+  ContentWrapper,
+  FirstRow,
+  LastColumn,
+  LogoWrapper,
+  SecondRow,
+  Icons,
+} from "./styles";
 
 const Logo = () => {
   return (
@@ -24,7 +31,7 @@ const Logo = () => {
       </g>
     </svg>
   );
-}
+};
 
 const Footer = () => {
   return (
@@ -52,20 +59,20 @@ const Footer = () => {
               text5=""
             />
             <LastColumn>
-            <FooterCol
-              heading="Reach Us"
-              text1="59, Alafia Estate, Ajibode, UI, Ibadan, Oyo State."
-              text2="(+234) 915 2269 331"
-              text3="frontidazoisinitiaitive@gmail.com"
-              text4=""
-              text5=""
-            />
-            <Icons>
-              <FacebookIcon/>
-              <InstagramIcon/>
-              <TwitterIcon/>
-              <YoutubeIcon/>
-            </Icons>
+              <FooterCol
+                heading="Reach Us"
+                text1="59, Alafia Estate, Ajibode, UI, Ibadan, Oyo State."
+                text2="(+234) 915 2269 331"
+                text3="frontidazoisinitiaitive@gmail.com"
+                text4=""
+                text5=""
+              />
+              <Icons>
+                <FacebookIcon white />
+                <InstagramIcon white />
+                <TwitterIcon white />
+                <YoutubeIcon white />
+              </Icons>
             </LastColumn>
           </FirstRow>
           <SecondRow>
@@ -75,6 +82,6 @@ const Footer = () => {
       </Container>
     </>
   );
-}
+};
 
-export default Footer
+export default Footer;

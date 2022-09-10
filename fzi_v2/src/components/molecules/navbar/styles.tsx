@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: red;
+  background-color: transparent;
 `;
 export const NavWrapper = styled.ul`
   list-style-type: none;
@@ -20,4 +20,5 @@ export const NavListItem = styled.li`
   text-transform: uppercase;
   color: #fff;
   margin: 0 20px;
+  cursor: pointer;
 `;
